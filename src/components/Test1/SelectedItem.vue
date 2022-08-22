@@ -14,6 +14,7 @@ export default {
     },
     index:{
       type:Number,
+      required:true
     }
   },
   methods:{
@@ -26,6 +27,7 @@ export default {
 
 <style  scoped>
 .selected__item {
+  margin: 6px;
   display: inline-flex;
   justify-content: center;
   align-items: center;

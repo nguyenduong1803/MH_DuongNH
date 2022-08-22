@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <Test1 />
+    <NewTest />
   </div>
 </template>
 
 <script>
-import Test1 from "./components/Test1/Test1.vue";
+import NewTest from "./components/Test1/NewTest.vue";
 export default {
   name: "app",
   data() {
@@ -14,7 +14,7 @@ export default {
     };
   },
   components: {
-    Test1,
+    NewTest
   },
 };
 </script>
