@@ -14,6 +14,7 @@
               :selectItem="item"
               @onDelete="handleSelect"
             />
+            
           </div>
           <input
             type="text"
