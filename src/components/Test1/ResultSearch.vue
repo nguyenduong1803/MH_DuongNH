@@ -10,26 +10,28 @@
         {{ item }}
       </li>
     </ul>
+    
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      
-    };
+    return {};
   },
   methods: {
     handleChoose(item) {
-      this.$emit("onSelect", {type:"add",value:item});
+      
+      this.$emit("onSelect", { type: "add", value: item });
     },
   },
   props: {
     list: {
       type: Array,
       default: [],
+      required: true,
     },
+    
   },
 };
 </script>
@@ -44,9 +46,9 @@ export default {
 .search__output {
   display: none;
   position: absolute;
-  top: 49px;
+  top: 100%;
   width: 400px;
-  height: 128px;
+  max-height: 128px;
   background-color: #f1f5f8;
   box-shadow: 0px 1px 8px rgb(102 102 102 / 25%);
   border-radius: 4px;
