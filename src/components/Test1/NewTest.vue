@@ -106,6 +106,7 @@ export default {
   },
   destroyed() {
     clearTimeout(this.timeoutID);
+    
   },
 };
 </script>
